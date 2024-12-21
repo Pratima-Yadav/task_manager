@@ -26,3 +26,23 @@ Run the project locally using following commands
 - npm i
 - npm start
 
+
+## Repository Architecture
+Project architecture is as follows
+
+    - src
+        - pages
+            - AuthPage.js (Contains UI for login and register flow)
+            - TaskPage.js (Contains UI for the task dashboard for managing tasks)
+
+        - redux
+            - slices 
+                - userSlice.js ( contains slice for managing users such as managing currrent users and getting user info )
+                - taskSlice.js ( contains slice for managing tasks such as adding , loading , deleting , completing etc. )
+            - store.js ( contains redux store files )
+        
+        - App.js (For Routes handling)
+        
+
+
+
