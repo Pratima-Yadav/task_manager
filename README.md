@@ -30,19 +30,16 @@ Run the project locally using following commands
 ## Repository Architecture
 Project architecture is as follows
 
-    - src
-        - pages
-            - AuthPage.js (Contains UI for login and register flow)
-            - TaskPage.js (Contains UI for the task dashboard for managing tasks)
+- src
+    - pages
+        - **AuthPage.js**: Handles the login and registration flows.
+        - **TaskPage.js**: Provides the task dashboard for managing tasks.
 
-        - redux
-            - slices 
-                - userSlice.js ( contains slice for managing users such as managing currrent users and getting user info )
-                - taskSlice.js ( contains slice for managing tasks such as adding , loading , deleting , completing etc. )
-            - store.js ( contains redux store files )
-        
-        - App.js (For Routes handling)
-        
+    - redux
+        - **slices**: 
+            - **userSlice.js**: Manages user-related functionality such as managing the current user and retrieving user information.
+            - **taskSlice.js**: Handles task-related actions like adding, loading, deleting, and marking tasks as completed.
+        - **store.js**: Configures the Redux store.
 
-
+    - **App.js**: Responsible for routing setup and managing application navigation.
 
